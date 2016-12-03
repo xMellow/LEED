@@ -1,11 +1,10 @@
 $(document).ready(function () {
   $(document).on("click", "#button", function () {
     $.ajax({
-      url:    "https://pi-core.cc.lehigh.edu/piwebapi/assetservers",
+      url:    "https://devdata.osisoft.com/piwebapi",
       "method": "GET",
-      "crossDomain": true,
       "headers": {
-        "authorization": "Basic YWRcZWxrMjE4OlZlZGxpJ3NwbGFndWU1OTY="
+        "authorization": "Basic d2ViYXBpdXNlcjohdHJ5My4xNHdlYmFwaSE="
       },
       success: function(data) {
         alert(data);
